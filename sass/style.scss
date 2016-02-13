@@ -17,7 +17,7 @@
   src: local('AmbleLight'), url('../fonts/Amble/Amble-Light.ttf') format('ttf');
 }
 @font-face {
-  font-family: 'Bigjohn';
+  font-family: 'BigJohn';
   font-style: normal;
   font-weight: 400;
   src: local('Bigjohn'), url('../fonts/Bigjohn/BIGJOHN.otf') format('otf');
@@ -34,7 +34,7 @@
 @import "grids";
 @import "reset";
 @import "layout/header";
-
+@import "site-parts/hero";
 @import "layout/footer";
 
 @include border-box-sizing();

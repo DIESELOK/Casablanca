@@ -1,0 +1,29 @@
+.hero {
+  overflow:hidden;
+  position: relative;
+  background: url("../images/hero-bg.jpg") fixed center/cover no-repeat;
+  .hero-title {
+    position: relative;
+    margin-top: 320px;
+    text-align: center;
+      color: white;
+      font-family: BigJohn;
+      font-size: 48px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    &:after{
+      content:'';
+      display: block;
+      position: absolute;
+      width: 86px;
+      height: 2px;
+      left:0;
+      right:0;
+      background-color: white;
+    }
+  }
+  p {
+      color: #fffefe;
+      line-height: 30px;
+  }
+}
