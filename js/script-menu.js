@@ -10,25 +10,17 @@ $(function() {
 });
 
 $(document).ready(function(){
+    $("#navbar,#hero").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
 
-            $("#navbar").removeClass("default");
-            $("#logo").removeClass("default-logo");
-            $(window).scroll(function(){
-                if ($(this).scrollTop() > 20) {
-                    $("#navbar").addClass("default").fadeIn('fast');
-                } else {
-                    $("#navbar").removeClass("default").fadeIn('fast');
-                };
-            });
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
 
-            $('a[href^="#"]').click(function () {
-                elementClick = $(this).attr("href");
-                destination = $(elementClick).offset().top;
-                if($.browser.safari){
-                    $('body').animate( { scrollTop: destination }, 1000 );
-                } else {
-                    $('html').animate( { scrollTop: destination }, 1000 );
-                }
-                return false;
-            });
-        });
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
