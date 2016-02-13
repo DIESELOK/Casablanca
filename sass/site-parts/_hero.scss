@@ -4,7 +4,7 @@
   background: url("../images/hero-bg.jpg") fixed center/cover no-repeat;
   .hero-title {
     position: relative;
-    margin-top: 320px;
+    margin: 320px 0 45px;
     text-align: center;
       color: white;
       font-family: BigJohn;
@@ -15,15 +15,26 @@
       content:'';
       display: block;
       position: absolute;
+      left: 0;
+      right: 0;
       width: 86px;
       height: 2px;
-      left:0;
-      right:0;
+      margin:50px auto;
+
       background-color: white;
     }
   }
   p {
+    max-width:628px;
+    margin:100px auto 280px;
+    text-align: center;
+    letter-spacing: 2px;
       color: #fffefe;
       line-height: 30px;
+  }
+  a{
+    display:block;
+    margin:0 auto 50px;
+    text-align: center;
   }
 }
