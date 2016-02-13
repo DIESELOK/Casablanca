@@ -7,7 +7,6 @@
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
     <![endif]-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
 
@@ -29,7 +28,7 @@
         </ul>
 </header>
 
-<section id="hero" class="hero" data-type="background" data-speed="10">
+<section id="hero" class="hero" >
     <div class="container">
         <h2 class="hero-title">We’ve got the talent</h2>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
@@ -42,8 +41,73 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
 </section>
 
-<section id="pure" data-type="background" data-speed="10">
+<section id="pure" >
         <h2><a href="#">Pure Creativity.</a></h2>
+</section>
+
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <h2>some of our work</h2>
+        <ul class="filter-navigation">
+            <li><button class="filter" data-filter="all">all</button></li>
+            <li><button class="filter" data-filter=".branding">branding</button></li>
+            <li><button class="filter" data-filter=".webdesign">web design</button></li>
+            <li><button class="filter" data-filter=".mobileui">mobile ui </button></li>
+            <li><button class="filter" data-filter=".illustrations">illustrations</button></li>
+        </ul>
+    </div>
+    <div>
+        <ul id="portfolio-list" class="portfolio-list">
+            <li class="mix branding">
+                <img src="images/portf-img-02.jpg" alt="Portfolio Gallery">
+                <div class="portfolio-rollover">
+                    <a href="#"></a>
+                    <h4>A Beautiful Heading</h4>
+                    <span>Freebies</span>
+                </div>
+            </li>
+            <li class="mix webdesign">
+                <img src="images/portf-img-03.jpg" alt="Portfolio Gallery">
+                <div class="portfolio-rollover">
+                    <a href="#"></a>
+                    <h4>A Beautiful Heading</h4>
+                    <span>Websites</span>
+                </div>
+            </li>
+            <li class="mix mobileui">
+                <img src="images/portf-img-04.jpg" alt="Portfolio Gallery">
+                <div class="portfolio-rollover">
+                    <a href="#"></a>
+                    <h4>A Beautiful Heading</h4>
+                    <span>Freebies</span>
+                </div>
+            </li>
+            <li class="mix illustrations">
+                <img src="images/portf-img-05.jpg" alt="Portfolio Gallery">
+                <div class="portfolio-rollover">
+                    <a href="#"></a>
+                    <h4>A Beautiful Heading</h4>
+                    <span>Websites</span>
+                </div>
+            </li>
+            <li class="mix illustrations">
+                <img src="images/portf-img-06.jpg" alt="Portfolio Gallery">
+                <div class="portfolio-rollover">
+                    <a href="#"></a>
+                    <h4>A Beautiful Heading</h4>
+                    <span>Freebies</span>
+                </div>
+            </li>
+            <li class="mix illustrations">
+                <img src="images/portf-img-07.jpg" alt="Portfolio Gallery">
+                <div class="portfolio-rollover">
+                    <a href="#"></a>
+                    <h4>A Beautiful Heading</h4>
+                    <span>Websites</span>
+                </div>
+            </li>
+        </ul>
+    </div>
 </section>
 <!--
 
@@ -59,7 +123,10 @@
         <p class="copyright-text">Copyright 2015 <span>Skewed</span>. All Rights Reserved </p>
     </div>
 </footer> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="js/script-menu.js"></script>
 <script src="js/parallax.js"></script>
+<script src="js/jquery.mixitup.js"></script>
+<script src="js/script-filter.js"></script>
 </body>
 </html>

@@ -1,12 +1,15 @@
-$(document).ready(function(){
-    $('section[data-type="background"]').each(function(){
-        var $bgobj = $(this); // создаем объект
-        $(window).scroll(function() {
-            var yPos = -($window.scrollTop() / $bgobj.data('speed')); // вычисляем коэффициент
-            // Присваиваем значение background-position
-            var coords = 'center '+ yPos + 'px';
-            // Создаем эффект Parallax Scrolling
-            $bgobj.css({ backgroundPosition: coords });
-        });
+$(window).scroll(function() {
+
+    var st = $(this).scrollTop() /10;
+
+    $(".hero .container").css({
+        "transform" : "translate3d(0px, -" + st  + "%, .01px)",
+        "-webkit-transform" : "translate3d(0px, -" + st  + "%, .01px)"
     });
+
+    $("#pure h2").css({
+        "transform" : "translate3d(0px, -" + st  + "%, .01px)",
+        "-webkit-transform" : "translate3d(0px, -" + st  + "%, .01px)"
+    });
+
 });

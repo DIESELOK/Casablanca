@@ -2,31 +2,31 @@
   font-family: 'AmbleRegular';
   font-style: normal;
   font-weight: normal;
-  src: local('AmbleRegular'), url('../fonts/Amble/Amble-Regular.ttf') format('ttf');
+  src: local('AmbleRegular'), url('../fonts/Amble/Amble-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'AmbleBold';
   font-style: normal;
   font-weight: normal;
-  src: local('AmbleBold'), url('../fonts/Amble/Amble-Bold.ttf') format('ttf');
+  src: local('AmbleBold'), url('../fonts/Amble/Amble-Bold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'AmbleLight';
   font-style: normal;
   font-weight: normal;
-  src: local('AmbleLight'), url('../fonts/Amble/Amble-Light.ttf') format('ttf');
+  src: local('AmbleLight'), url('../fonts/Amble/Amble-Light.ttf') format('truetype');
 }
 @font-face {
   font-family: 'BIGJOHN';
   font-style: normal;
   font-weight: normal;
-  src: local('BIGJOHN'), url('../fonts/Bigjohn/bigjohn.ttf') format('ttf');
+  src: local('BIGJOHN'), url('../fonts/Bigjohn/bigjohn.ttf') format('truetype');
 }
 @font-face {
   font-family: 'AvenirLight';
   font-style: normal;
   font-weight: normal;
-  src: local('AvenirLight'), url('../fonts/Avenir/Avenir-Light.woff') format('woff');
+  src: local('AvenirLight'), url('../fonts/Avenir/Avenir-Light.ttf') format('truetype');
 }
 
 
@@ -37,6 +37,7 @@
 @import "site-parts/hero";
 @import "site-parts/intro";
 @import "site-parts/pure";
+@import "site-parts/portfolio";
 @import "layout/footer";
 
 @include border-box-sizing();

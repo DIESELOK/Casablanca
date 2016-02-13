@@ -2,31 +2,31 @@
   font-family: 'AmbleRegular';
   font-style: normal;
   font-weight: normal;
-  src: local("AmbleRegular"), url("../fonts/Amble/Amble-Regular.ttf") format("ttf");
+  src: local("AmbleRegular"), url("../fonts/Amble/Amble-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: 'AmbleBold';
   font-style: normal;
   font-weight: normal;
-  src: local("AmbleBold"), url("../fonts/Amble/Amble-Bold.ttf") format("ttf");
+  src: local("AmbleBold"), url("../fonts/Amble/Amble-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: 'AmbleLight';
   font-style: normal;
   font-weight: normal;
-  src: local("AmbleLight"), url("../fonts/Amble/Amble-Light.ttf") format("ttf");
+  src: local("AmbleLight"), url("../fonts/Amble/Amble-Light.ttf") format("truetype");
 }
 @font-face {
   font-family: 'BIGJOHN';
   font-style: normal;
   font-weight: normal;
-  src: local("BIGJOHN"), url("../fonts/Bigjohn/bigjohn.ttf") format("ttf");
+  src: local("BIGJOHN"), url("../fonts/Bigjohn/bigjohn.ttf") format("truetype");
 }
 @font-face {
   font-family: 'AvenirLight';
   font-style: normal;
   font-weight: normal;
-  src: local("AvenirLight"), url("../fonts/Avenir/Avenir-Light.woff") format("woff");
+  src: local("AvenirLight"), url("../fonts/Avenir/Avenir-Light.ttf") format("truetype");
 }
 /*----------------------------------------------------------------------------------*/
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
@@ -104,16 +104,15 @@ a:hover {
   left: 0;
   right: 0;
   z-index: 9999;
-  width: 100%;
   margin: 15px 0 0 15px;
 }
-/* line 8, ../sass/layout/_header.scss */
+/* line 7, ../sass/layout/_header.scss */
 #navbar .iconMenu {
   float: left;
   color: #fff;
   cursor: pointer;
 }
-/* line 17, ../sass/layout/_header.scss */
+/* line 16, ../sass/layout/_header.scss */
 #navbar .itemsMenu li {
   float: left;
   width: 100%;
@@ -122,45 +121,45 @@ a:hover {
   text-align: left;
 }
 @media screen and (min-width: 930px) {
-  /* line 17, ../sass/layout/_header.scss */
+  /* line 16, ../sass/layout/_header.scss */
   #navbar .itemsMenu li {
     display: inline-block;
     width: auto;
     margin-right: 15px;
     padding: 0 10px;
   }
-  /* line 28, ../sass/layout/_header.scss */
+  /* line 27, ../sass/layout/_header.scss */
   #navbar .itemsMenu li:last-child {
     margin-right: 0;
   }
 }
-/* line 32, ../sass/layout/_header.scss */
+/* line 31, ../sass/layout/_header.scss */
 #navbar .itemsMenu li a {
   color: #fff;
 }
-/* line 34, ../sass/layout/_header.scss */
+/* line 33, ../sass/layout/_header.scss */
 #navbar .itemsMenu li a:hover {
   transition: 0.5s;
   border-bottom: 3px solid #f2f2f2;
 }
 
-/* line 43, ../sass/layout/_header.scss */
+/* line 42, ../sass/layout/_header.scss */
 .showitems {
   display: block !important;
   transition: 1s;
 }
 
-/* line 48, ../sass/layout/_header.scss */
+/* line 47, ../sass/layout/_header.scss */
 .iconMenu {
   display: block;
 }
 
-/* line 52, ../sass/layout/_header.scss */
+/* line 51, ../sass/layout/_header.scss */
 .itemsMenu {
   display: none;
 }
 
-/* line 56, ../sass/layout/_header.scss */
+/* line 55, ../sass/layout/_header.scss */
 .itemsMenu li {
   display: block;
 }
@@ -169,9 +168,10 @@ a:hover {
 .hero {
   overflow: hidden;
   position: relative;
-  background: url("../images/hero-bg.jpg") fixed center/cover no-repeat;
+  background: url("../images/hero-bg.jpg") center no-repeat;
+  background-size: cover;
 }
-/* line 5, ../sass/site-parts/_hero.scss */
+/* line 6, ../sass/site-parts/_hero.scss */
 .hero .hero-title {
   position: relative;
   margin: 320px 0 45px;
@@ -183,12 +183,12 @@ a:hover {
   letter-spacing: 2px;
 }
 @media screen and (min-width: 930px) {
-  /* line 5, ../sass/site-parts/_hero.scss */
+  /* line 6, ../sass/site-parts/_hero.scss */
   .hero .hero-title {
     margin-top: 18%;
   }
 }
-/* line 17, ../sass/site-parts/_hero.scss */
+/* line 18, ../sass/site-parts/_hero.scss */
 .hero .hero-title:after {
   content: '';
   display: block;
@@ -200,7 +200,7 @@ a:hover {
   margin: 50px auto;
   background-color: white;
 }
-/* line 29, ../sass/site-parts/_hero.scss */
+/* line 30, ../sass/site-parts/_hero.scss */
 .hero p {
   max-width: 628px;
   margin: 100px auto 20%;
@@ -209,7 +209,7 @@ a:hover {
   color: #fffefe;
   line-height: 30px;
 }
-/* line 37, ../sass/site-parts/_hero.scss */
+/* line 38, ../sass/site-parts/_hero.scss */
 .hero a {
   display: block;
   margin: 0 auto 50px;
@@ -282,6 +282,33 @@ a:hover {
   opacity: 0.7;
 }
 
+/* line 1, ../sass/site-parts/_portfolio.scss */
+#portfolio {
+  overflow: hidden;
+}
+/* line 3, ../sass/site-parts/_portfolio.scss */
+#portfolio h2 {
+  position: relative;
+  margin: 110px auto;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222;
+  font-family: BigJohn;
+  font-size: 30px;
+}
+/* line 11, ../sass/site-parts/_portfolio.scss */
+#portfolio h2:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 86px;
+  height: 2px;
+  margin: 50px auto;
+  background-color: #222;
+}
+
 /* line 1, ../sass/layout/_footer.scss */
 footer {
   position: relative;
@@ -339,7 +366,7 @@ footer .copyright-text span {
   box-sizing: border-box;
 }
 
-/* line 43, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 .container {
   max-width: 1200px;
   margin-left: auto;
@@ -354,7 +381,7 @@ footer .copyright-text span {
   clear: both;
 }
 
-/* line 48, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 img {
   max-width: 100%;
 }

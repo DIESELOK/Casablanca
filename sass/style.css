@@ -3,7 +3,7 @@ Error: File to import not found or unreadable: compass.
         on line 33 of style.scss
 
 28:   font-weight: normal;
-29:   src: local('AvenirLight'), url('../fonts/Avenir/Avenir-Light.woff') format('woff');
+29:   src: local('AvenirLight'), url('../fonts/Avenir/Avenir-Light.ttf') format('truetype');
 30: }
 31: 
 32: 
@@ -58,4 +58,4 @@ e:/Ruby22/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: compass.\A         on line 33 of style.scss\A \A 28:   font-weight: normal;\A 29:   src: local('AvenirLight'), url('../fonts/Avenir/Avenir-Light.woff') format('woff');\A 30: }\A 31: \A 32: \A 33: @import 'compass';\A 34: @import \"grids\";\A 35: @import \"reset\";\A 36: @import \"layout/header\";\A 37: @import \"site-parts/hero\";\A 38: @import \"site-parts/intro\";"; }
+  content: "Error: File to import not found or unreadable: compass.\A         on line 33 of style.scss\A \A 28:   font-weight: normal;\A 29:   src: local('AvenirLight'), url('../fonts/Avenir/Avenir-Light.ttf') format('truetype');\A 30: }\A 31: \A 32: \A 33: @import 'compass';\A 34: @import \"grids\";\A 35: @import \"reset\";\A 36: @import \"layout/header\";\A 37: @import \"site-parts/hero\";\A 38: @import \"site-parts/intro\";"; }
