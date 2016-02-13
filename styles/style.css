@@ -168,10 +168,9 @@ a:hover {
 .hero {
   overflow: hidden;
   position: relative;
-  background: url("../images/hero-bg.jpg") center no-repeat;
-  background-size: cover;
+  background: url("../images/hero-bg.jpg") center/cover no-repeat;
 }
-/* line 6, ../sass/site-parts/_hero.scss */
+/* line 5, ../sass/site-parts/_hero.scss */
 .hero .hero-title {
   position: relative;
   margin: 320px 0 45px;
@@ -183,12 +182,12 @@ a:hover {
   letter-spacing: 2px;
 }
 @media screen and (min-width: 930px) {
-  /* line 6, ../sass/site-parts/_hero.scss */
+  /* line 5, ../sass/site-parts/_hero.scss */
   .hero .hero-title {
     margin-top: 18%;
   }
 }
-/* line 18, ../sass/site-parts/_hero.scss */
+/* line 17, ../sass/site-parts/_hero.scss */
 .hero .hero-title:after {
   content: '';
   display: block;
@@ -200,7 +199,7 @@ a:hover {
   margin: 50px auto;
   background-color: white;
 }
-/* line 30, ../sass/site-parts/_hero.scss */
+/* line 29, ../sass/site-parts/_hero.scss */
 .hero p {
   max-width: 628px;
   margin: 100px auto 20%;
@@ -209,7 +208,7 @@ a:hover {
   color: #fffefe;
   line-height: 30px;
 }
-/* line 38, ../sass/site-parts/_hero.scss */
+/* line 37, ../sass/site-parts/_hero.scss */
 .hero a {
   display: block;
   margin: 0 auto 50px;
@@ -279,7 +278,7 @@ a:hover {
 }
 /* line 18, ../sass/site-parts/_pure.scss */
 #pure a:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 /* line 1, ../sass/site-parts/_portfolio.scss */
@@ -307,6 +306,137 @@ a:hover {
   height: 2px;
   margin: 50px auto;
   background-color: #222;
+}
+/* line 23, ../sass/site-parts/_portfolio.scss */
+#portfolio .filter-navigation {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+@media screen and (min-width: 800px) {
+  /* line 23, ../sass/site-parts/_portfolio.scss */
+  #portfolio .filter-navigation {
+    justify-content: center;
+  }
+}
+/* line 31, ../sass/site-parts/_portfolio.scss */
+#portfolio .filter-navigation li {
+  display: inline-block;
+}
+/* line 33, ../sass/site-parts/_portfolio.scss */
+#portfolio .filter-navigation li button {
+  color: #222;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  padding: 0 15px;
+  background: transparent;
+  transition: 0.5s;
+}
+/* line 41, ../sass/site-parts/_portfolio.scss */
+#portfolio .filter-navigation li button:focus {
+  font-family: BigJohn;
+  font-weight: 700;
+}
+/* line 48, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+/* line 53, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-list .mix {
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  /* line 48, ../sass/site-parts/_portfolio.scss */
+  #portfolio .portfolio-list {
+    justify-content: space-between;
+  }
+}
+/* line 59, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-list li {
+  position: relative;
+  overflow: hidden;
+  max-height: 420px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+/* line 65, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-list li .portfolio-rollover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: black;
+  transition: 0.5s;
+}
+/* line 74, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-list li .portfolio-rollover:hover {
+  opacity: 0.75;
+}
+/* line 77, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-list li .portfolio-rollover h4 {
+  margin: 150px auto 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: BigJohn;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* line 86, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-list li .portfolio-rollover a {
+  display: block;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+/* line 92, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-list li .portfolio-rollover a:hover {
+  text-decoration: underline;
+}
+/* line 95, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-list li .portfolio-rollover a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 48px;
+  height: 2px;
+  margin: 40px auto;
+  background-color: #d87843;
+}
+/* line 110, ../sass/site-parts/_portfolio.scss */
+#portfolio .more-btn {
+  text-align: center;
+  display: block;
+  margin-bottom: 70px;
+}
+/* line 114, ../sass/site-parts/_portfolio.scss */
+#portfolio .more-btn a {
+  border: 3px solid #222;
+  padding: 15px 40px;
+  color: #222;
+  font-size: 24px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+/* line 121, ../sass/site-parts/_portfolio.scss */
+#portfolio .more-btn a:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 410px) {
+  /* line 114, ../sass/site-parts/_portfolio.scss */
+  #portfolio .more-btn a {
+    padding: 15px 90px;
+  }
 }
 
 /* line 1, ../sass/layout/_footer.scss */
