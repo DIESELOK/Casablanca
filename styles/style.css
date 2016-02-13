@@ -17,10 +17,10 @@
   src: local("AmbleLight"), url("../fonts/Amble/Amble-Light.ttf") format("ttf");
 }
 @font-face {
-  font-family: 'BigJohn';
+  font-family: 'BIGJOHN';
   font-style: normal;
   font-weight: normal;
-  src: local("BigJohn"), url("../fonts/Bigjohn/BIGJOHN.otf") format("otf");
+  src: local("BIGJOHN"), url("../fonts/Bigjohn/bigjohn.ttf") format("ttf");
 }
 @font-face {
   font-family: 'AvenirLight';
@@ -182,7 +182,13 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-/* line 14, ../sass/site-parts/_hero.scss */
+@media screen and (min-width: 930px) {
+  /* line 5, ../sass/site-parts/_hero.scss */
+  .hero .hero-title {
+    margin-top: 18%;
+  }
+}
+/* line 17, ../sass/site-parts/_hero.scss */
 .hero .hero-title:after {
   content: '';
   display: block;
@@ -194,20 +200,56 @@ a:hover {
   margin: 50px auto;
   background-color: white;
 }
-/* line 27, ../sass/site-parts/_hero.scss */
+/* line 29, ../sass/site-parts/_hero.scss */
 .hero p {
   max-width: 628px;
-  margin: 100px auto 280px;
+  margin: 100px auto 20%;
   text-align: center;
   letter-spacing: 2px;
   color: #fffefe;
   line-height: 30px;
 }
-/* line 35, ../sass/site-parts/_hero.scss */
+/* line 37, ../sass/site-parts/_hero.scss */
 .hero a {
   display: block;
   margin: 0 auto 50px;
   text-align: center;
+}
+
+/* line 1, ../sass/site-parts/_intro.scss */
+#intro {
+  overflow: hidden;
+  text-align: center;
+}
+/* line 4, ../sass/site-parts/_intro.scss */
+#intro h2 {
+  position: relative;
+  margin: 100px 0 100px;
+  color: #222;
+  font-family: 'BigJohn';
+  text-transform: uppercase;
+  font-size: 30px;
+}
+/* line 11, ../sass/site-parts/_intro.scss */
+#intro h2:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 86px;
+  height: 2px;
+  margin: 50px auto;
+  background-color: #222;
+}
+/* line 23, ../sass/site-parts/_intro.scss */
+#intro p {
+  max-width: 742px;
+  margin: 0 auto;
+  color: #222;
+  font-family: 'AmbleLight';
+  font-size: 22px;
+  line-height: 36px;
 }
 
 /* line 1, ../sass/layout/_footer.scss */
@@ -267,7 +309,7 @@ footer .copyright-text span {
   box-sizing: border-box;
 }
 
-/* line 41, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 .container {
   max-width: 1200px;
   margin-left: auto;
@@ -282,7 +324,7 @@ footer .copyright-text span {
   clear: both;
 }
 
-/* line 46, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 img {
   max-width: 100%;
 }

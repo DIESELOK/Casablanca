@@ -17,10 +17,10 @@
   src: local('AmbleLight'), url('../fonts/Amble/Amble-Light.ttf') format('ttf');
 }
 @font-face {
-  font-family: 'BigJohn';
+  font-family: 'BIGJOHN';
   font-style: normal;
   font-weight: normal;
-  src: local('BigJohn'), url('../fonts/Bigjohn/BIGJOHN.otf') format('otf');
+  src: local('BIGJOHN'), url('../fonts/Bigjohn/bigjohn.ttf') format('ttf');
 }
 @font-face {
   font-family: 'AvenirLight';
@@ -35,6 +35,8 @@
 @import "reset";
 @import "layout/header";
 @import "site-parts/hero";
+@import "site-parts/intro";
+@import "site-parts/pure";
 @import "layout/footer";
 
 @include border-box-sizing();
