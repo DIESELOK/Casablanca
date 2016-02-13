@@ -12,4 +12,9 @@ $(window).scroll(function() {
         "-webkit-transform" : "translate3d(0px, " + st  + "%, .01px)"
     });
 
+    $("#help-sec h2").css({
+        "transform" : "translate3d(0px, " + st  + "%, .01px)",
+        "-webkit-transform" : "translate3d(0px, " + st  + "%, .01px)"
+    });
+
 });

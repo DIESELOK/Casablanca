@@ -439,6 +439,36 @@ a:hover {
   }
 }
 
+/* line 1, ../sass/site-parts/_help.scss */
+#help-sec {
+  overflow: hidden;
+  background: url("../images/help-bg.jpg") center/cover no-repeat;
+}
+/* line 4, ../sass/site-parts/_help.scss */
+#help-sec h2 {
+  margin: 180px auto;
+  text-align: center;
+}
+/* line 8, ../sass/site-parts/_help.scss */
+#help-sec a {
+  border: 3px solid white;
+  padding: 40px 40px;
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  transition: 0.5s;
+}
+@media screen and (min-width: 410px) {
+  /* line 8, ../sass/site-parts/_help.scss */
+  #help-sec a {
+    padding: 40px 90px;
+  }
+}
+/* line 18, ../sass/site-parts/_help.scss */
+#help-sec a:hover {
+  opacity: 0.5;
+}
+
 /* line 1, ../sass/layout/_footer.scss */
 footer {
   position: relative;
@@ -496,7 +526,7 @@ footer .copyright-text span {
   box-sizing: border-box;
 }
 
-/* line 44, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .container {
   max-width: 1200px;
   margin-left: auto;
@@ -511,7 +541,7 @@ footer .copyright-text span {
   clear: both;
 }
 
-/* line 49, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 img {
   max-width: 100%;
 }
