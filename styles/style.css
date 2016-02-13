@@ -1,0 +1,237 @@
+@font-face {
+  font-family: 'AmbleRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: local("AmbleRegular"), url("../fonts/Amble/Amble-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: 'AmbleBold';
+  font-style: normal;
+  font-weight: 700;
+  src: local("AmbleBold"), url("../fonts/Amble/Amble-Bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: 'AmbleLight';
+  font-style: normal;
+  font-weight: 300;
+  src: local("AmbleLight"), url("../fonts/Amble/Amble-Light.ttf") format("ttf");
+}
+@font-face {
+  font-family: 'Bigjohn';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bigjohn"), url("../fonts/Bigjohn/BIGJOHN.otf") format("otf");
+}
+@font-face {
+  font-family: 'AvenirLight';
+  font-style: normal;
+  font-weight: 300;
+  src: local("AvenirLight"), url("../fonts/Avenir/Avenir-Light.woff") format("woff");
+}
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 4, ../sass/_reset.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 5, ../sass/_reset.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font: 22px 'AmbleRegular', sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+/* line 6, ../sass/_reset.scss */
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
+/* line 12, ../sass/_reset.scss */
+select, input, textarea {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* line 13, ../sass/_reset.scss */
+textarea {
+  vertical-align: top;
+}
+
+/* line 14, ../sass/_reset.scss */
+:focus {
+  outline: none;
+}
+
+/* line 15, ../sass/_reset.scss */
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 16, ../sass/_reset.scss */
+img, fieldset {
+  border: 0;
+}
+
+/* line 17, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 18, ../sass/_reset.scss */
+a:link, a:visited {
+  font: 22px 'AmbleRegular', sans-serif;
+  color: #4C8BBF;
+  text-decoration: none;
+}
+
+/* line 19, ../sass/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/layout/_header.scss */
+header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.35;
+  background-color: black;
+}
+@media screen and (min-width: 800px) {
+  /* line 1, ../sass/layout/_header.scss */
+  header {
+    min-height: 100px;
+  }
+}
+/* line 10, ../sass/layout/_header.scss */
+header h1 {
+  margin: 34px auto 10px;
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  /* line 10, ../sass/layout/_header.scss */
+  header h1 {
+    float: left;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 17, ../sass/layout/_header.scss */
+  header .main-navigation {
+    float: right;
+    margin-top: 35px;
+  }
+}
+/* line 23, ../sass/layout/_header.scss */
+header .main-navigation ul li {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  /* line 23, ../sass/layout/_header.scss */
+  header .main-navigation ul li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  /* line 32, ../sass/layout/_header.scss */
+  header .main-navigation ul li:last-child {
+    margin-right: 0px;
+  }
+}
+/* line 36, ../sass/layout/_header.scss */
+header .main-navigation ul li a {
+  color: #fff;
+  transition: 0.5s;
+}
+/* line 39, ../sass/layout/_header.scss */
+header .main-navigation ul li a:hover {
+  color: #bbb;
+}
+
+/* line 1, ../sass/layout/_footer.scss */
+footer {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background-color: #222;
+}
+/* line 6, ../sass/layout/_footer.scss */
+footer .social-list {
+  margin: 60px auto 25px;
+  text-align: center;
+}
+/* line 9, ../sass/layout/_footer.scss */
+footer .social-list li {
+  display: inline-block;
+  margin: 0 12px 12px 0;
+}
+/* line 12, ../sass/layout/_footer.scss */
+footer .social-list li:last-child {
+  margin-right: 0;
+}
+/* line 15, ../sass/layout/_footer.scss */
+footer .social-list li .fa {
+  width: 48px;
+  height: 48px;
+  border: 2px solid white;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+  color: #fff;
+  transition: 0.5s;
+}
+/* line 24, ../sass/layout/_footer.scss */
+footer .social-list li .fa:hover {
+  color: #222;
+  background-color: #fff;
+}
+/* line 31, ../sass/layout/_footer.scss */
+footer .copyright-text {
+  margin-bottom: 60px;
+  font-size: 16px;
+  color: #bbb;
+}
+/* line 35, ../sass/layout/_footer.scss */
+footer .copyright-text span {
+  color: #f7cc4b;
+}
+
+/* line 21, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 41, ../sass/style.scss */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+/* line 12, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 46, ../sass/style.scss */
+img {
+  max-width: 100%;
+}
