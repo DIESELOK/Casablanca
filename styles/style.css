@@ -645,6 +645,26 @@ a:hover {
   border-color: red;
 }
 
+/* line 1, ../sass/site-parts/_big-video.scss */
+#big-video {
+  position: relative;
+  overflow: hidden;
+  background-color: #080808;
+  min-height: 500px;
+}
+/* line 6, ../sass/site-parts/_big-video.scss */
+#big-video video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-size: cover;
+  opacity: .3;
+}
+
 /* line 1, ../sass/layout/_footer.scss */
 footer {
   position: relative;
@@ -702,7 +722,7 @@ footer .copyright-text span {
   box-sizing: border-box;
 }
 
-/* line 47, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .container {
   max-width: 1200px;
   margin-left: auto;
@@ -717,7 +737,7 @@ footer .copyright-text span {
   clear: both;
 }
 
-/* line 52, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 img {
   max-width: 100%;
 }
