@@ -7,4 +7,13 @@ $(document).ready(function() {
         auto: true,
         moveSlides: 1
     });
+
+    $('.skills-item').bxSlider({
+        minSlides: 2,
+        maxSlides: 6,
+        slideWidth: 350,
+        slideMargin: 50,
+        auto: true,
+        moveSlides: 1
+    });
 });
