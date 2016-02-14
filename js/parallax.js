@@ -18,7 +18,7 @@ $(window).scroll(function() {
     });
 
     $("#quote h2").css({
-        "transform" : "translate3d(0px, " + st/10  + "%, .01px)",
-        "-webkit-transform" : "translate3d(0px, " + st/10  + "%, .01px)"
+        "transform" : "translate3d(0px, " + st/3  + "%, .01px)",
+        "-webkit-transform" : "translate3d(0px, " + st/3  + "%, .01px)"
     });
 });

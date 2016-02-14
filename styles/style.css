@@ -5,6 +5,12 @@
   src: local("AmbleRegular"), url("../fonts/Amble/Amble-Regular.ttf") format("truetype");
 }
 @font-face {
+  font-family: 'AmbleItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("AmbleItalic"), url("../fonts/Amble/Amble-italic.ttf") format("truetype");
+}
+@font-face {
   font-family: 'AmbleBold';
   font-style: normal;
   font-weight: normal;
@@ -761,6 +767,81 @@ a:hover {
   opacity: 0.5;
 }
 
+/* line 1, ../sass/site-parts/_contact.scss */
+#contact {
+  overflow: hidden;
+}
+/* line 3, ../sass/site-parts/_contact.scss */
+#contact h2 {
+  position: relative;
+  margin: 110px auto;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222;
+  font-family: BigJohn;
+  font-size: 30px;
+}
+/* line 11, ../sass/site-parts/_contact.scss */
+#contact h2:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 86px;
+  height: 2px;
+  margin: 50px auto;
+  background-color: #222;
+}
+/* line 23, ../sass/site-parts/_contact.scss */
+#contact p {
+  max-width: 742px;
+  margin: 100px auto 60px;
+  text-align: center;
+  color: #222;
+  line-height: 36px;
+  font-weight: 300;
+}
+/* line 31, ../sass/site-parts/_contact.scss */
+#contact .contact-info {
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+/* line 34, ../sass/site-parts/_contact.scss */
+#contact .contact-info h3 {
+  margin-top: 100px;
+}
+/* line 37, ../sass/site-parts/_contact.scss */
+#contact .contact-info .address {
+  margin-bottom: 10px;
+}
+/* line 39, ../sass/site-parts/_contact.scss */
+#contact .contact-info .address li {
+  display: block;
+  max-width: 250px;
+  margin: 25px 0;
+  color: #222;
+  font-weight: 300;
+  font-family: 'AmbleItalic';
+  text-align: left;
+}
+/* line 49, ../sass/site-parts/_contact.scss */
+#contact .contact-info .social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 250px;
+  margin-bottom: 100px;
+}
+/* line 54, ../sass/site-parts/_contact.scss */
+#contact .contact-info .social li {
+  display: inline-block;
+}
+/* line 56, ../sass/site-parts/_contact.scss */
+#contact .contact-info .social li .fa {
+  color: black;
+  font-size: 26px;
+}
+
 /* line 1, ../sass/layout/_footer.scss */
 footer {
   position: relative;
@@ -818,7 +899,7 @@ footer .copyright-text span {
   box-sizing: border-box;
 }
 
-/* line 50, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 .container {
   max-width: 1200px;
   margin-left: auto;
@@ -833,7 +914,7 @@ footer .copyright-text span {
   clear: both;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 img {
   max-width: 100%;
 }
