@@ -734,7 +734,7 @@ a:hover {
 /* line 1, ../sass/site-parts/_quote.scss */
 #quote {
   overflow: hidden;
-  background: url("../images/pure-bg.jpg") center/cover no-repeat;
+  background: url("../images/quote-bg.jpg") center/cover no-repeat;
 }
 /* line 4, ../sass/site-parts/_quote.scss */
 #quote h2 {

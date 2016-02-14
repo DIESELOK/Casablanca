@@ -17,4 +17,8 @@ $(window).scroll(function() {
         "-webkit-transform" : "translate3d(0px, " + st  + "%, .01px)"
     });
 
+    $("#quote h2").css({
+        "transform" : "translate3d(0px, " + st/10  + "%, .01px)",
+        "-webkit-transform" : "translate3d(0px, " + st/10  + "%, .01px)"
+    });
 });
