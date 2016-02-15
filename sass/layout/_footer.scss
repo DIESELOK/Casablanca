@@ -1,39 +1,27 @@
-footer{
-  position: relative;
-  overflow: hidden;
-  text-align: center;
+footer {
   background-color: #222;
-  .social-list{
-    margin: 60px auto 25px;
-    text-align: center;
-    li{
-      display:inline-block;
-      margin: 0 12px 12px 0;
-      &:last-child{
-        margin-right: 0;
-      }
-      .fa{
-        width: 48px;
-        height: 48px;
-        border: 2px solid white;
-        @include border-radius(50%);
-        padding: 10px;
-        font-size: 24px;
-        color:#fff;
-        transition: 0.5s;
-        &:hover{
-          color:#222;
-          background-color: #fff;
-        }
+  .container {
+    padding: 100px 5px;
+    .footer-logo-block {
+      max-width: 380px;
+      color: #fff;
+      margin: 0 auto 70px;
+      img {
+        max-width: 100%;
       }
     }
-  }
-  .copyright-text{
-    margin-bottom: 60px;
-    font-size: 16px;
-    color: #bbb;
-    span{
-      color: #f7cc4b;
+    p {
+      text-align: center;
+      display: block;
+      font: 16px/40px "AmbleRegular";
+      color: #e4e4e4;
+      a {
+        color: #d87843;
+        font: 16px/40px "AmbleBold";
+        &:hover {
+          text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65)
+        }
+      }
     }
   }
 }

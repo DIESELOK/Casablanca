@@ -750,7 +750,7 @@ a:hover {
 /* line 8, ../sass/site-parts/_quote.scss */
 #quote a {
   border: 3px solid white;
-  padding: 40px 40px;
+  padding: 35px 35px;
   color: white;
   font-weight: 700;
   font-size: 30px;
@@ -768,11 +768,11 @@ a:hover {
 }
 
 /* line 1, ../sass/site-parts/_contact.scss */
-#contact {
-  overflow: hidden;
+.contact {
+  background: #fff;
 }
 /* line 3, ../sass/site-parts/_contact.scss */
-#contact h2 {
+.contact h2 {
   position: relative;
   margin: 110px auto;
   text-transform: uppercase;
@@ -782,7 +782,7 @@ a:hover {
   font-size: 30px;
 }
 /* line 11, ../sass/site-parts/_contact.scss */
-#contact h2:after {
+.contact h2:after {
   content: '';
   display: block;
   position: absolute;
@@ -794,7 +794,7 @@ a:hover {
   background-color: #222;
 }
 /* line 23, ../sass/site-parts/_contact.scss */
-#contact p {
+.contact p {
   max-width: 742px;
   margin: 100px auto 60px;
   text-align: center;
@@ -802,94 +802,260 @@ a:hover {
   line-height: 36px;
   font-weight: 300;
 }
-/* line 31, ../sass/site-parts/_contact.scss */
-#contact .contact-info {
-  overflow: hidden;
-  background-color: #f2f2f2;
+
+/* line 32, ../sass/site-parts/_contact.scss */
+.contact-info {
+  text-align: center;
+  padding: 0 5px 30px;
+  background: #f2f2f2;
 }
-/* line 34, ../sass/site-parts/_contact.scss */
-#contact .contact-info h3 {
-  margin-top: 100px;
+/* line 36, ../sass/site-parts/_contact.scss */
+.contact-info h4 {
+  font: 24px/60px 'BIGJOHN';
+  margin: 0 auto 20px;
 }
-/* line 37, ../sass/site-parts/_contact.scss */
-#contact .contact-info .address {
-  margin-bottom: 10px;
+/* line 40, ../sass/site-parts/_contact.scss */
+.contact-info p {
+  font: italic 22px/40px 'AmbleLight';
+  margin-bottom: 25px;
 }
-/* line 39, ../sass/site-parts/_contact.scss */
-#contact .contact-info .address li {
+/* line 44, ../sass/site-parts/_contact.scss */
+.contact-info .social-block {
   display: block;
-  max-width: 250px;
-  margin: 25px 0;
-  color: #222;
-  font-weight: 300;
-  font-family: 'AmbleItalic';
-  text-align: left;
 }
-/* line 49, ../sass/site-parts/_contact.scss */
-#contact .contact-info .social {
-  display: flex;
-  justify-content: space-between;
-  max-width: 250px;
-  margin-bottom: 100px;
-}
-/* line 54, ../sass/site-parts/_contact.scss */
-#contact .contact-info .social li {
-  display: inline-block;
-}
-/* line 56, ../sass/site-parts/_contact.scss */
-#contact .contact-info .social li .fa {
+/* line 46, ../sass/site-parts/_contact.scss */
+.contact-info .social-block a {
+  font-size: 14px;
   color: black;
-  font-size: 26px;
+  display: inline-block;
+  margin-right: 25px;
+}
+/* line 53, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-facebook:hover {
+  color: #3b5998;
+  transform: scale(1.8) rotate(360deg);
+}
+/* line 57, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-facebook:active {
+  transform: scale(1.3);
+}
+/* line 62, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-twitter:hover {
+  color: #00aced;
+  transform: scale(1.8) rotate(360deg);
+}
+/* line 66, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-twitter:active {
+  transform: scale(1.3);
+}
+/* line 71, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-linkedin:hover {
+  color: #007bb6;
+  transform: scale(1.8) rotate(360deg);
+}
+/* line 75, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-linkedin:active {
+  transform: scale(1.3);
+}
+/* line 80, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-vimeo:hover {
+  color: #aad450;
+  transform: scale(1.8) rotate(360deg);
+}
+/* line 84, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-vimeo:active {
+  transform: scale(1.3);
+}
+/* line 90, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-behance:hover {
+  color: #3b5998;
+  transform: scale(1.8) rotate(360deg);
+}
+/* line 94, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-behance:active {
+  transform: scale(1.3);
 }
 
+/* line 100, ../sass/site-parts/_contact.scss */
+.contact-form {
+  padding: 30px 5px;
+  margin: 0 auto;
+  background: #e4e4e4;
+}
+/* line 104, ../sass/site-parts/_contact.scss */
+.contact-form input {
+  display: block;
+  width: 300px;
+  height: 35px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #afafaf;
+  margin: 0px auto 30px;
+  transition: all .5s ease;
+}
+/* line 113, ../sass/site-parts/_contact.scss */
+.contact-form input:focus {
+  border-bottom: 2px solid #d87843;
+}
+/* line 116, ../sass/site-parts/_contact.scss */
+.contact-form input:hover {
+  transform: rotate(1deg);
+}
+/* line 120, ../sass/site-parts/_contact.scss */
+.contact-form textarea {
+  width: 100%;
+  height: 55px;
+  max-width: 670px;
+  background: #e4e4e4;
+  border: none;
+  border-bottom: 2px solid #afafaf;
+  transition: all .5s ease;
+}
+/* line 128, ../sass/site-parts/_contact.scss */
+.contact-form textarea:focus {
+  border-bottom: 2px solid #d87843;
+}
+/* line 131, ../sass/site-parts/_contact.scss */
+.contact-form textarea:hover {
+  transform: rotate(1deg);
+}
+/* line 135, ../sass/site-parts/_contact.scss */
+.contact-form input[type=button] {
+  display: block;
+  margin: 0 auto;
+  max-width: 430px;
+  height: 100px;
+  background: none;
+  color: #fff;
+  font: 700 30px/100px "AmbleBold";
+  text-align: center;
+  border: 3px solid white;
+  color: #222;
+  border-color: #222;
+  width: 183px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  margin-top: 40px;
+}
+/* line 145, ../sass/site-parts/_contact.scss */
+.contact-form input[type=button]:hover {
+  transition: 0.5s ease-in-out;
+  background: #e29158;
+  cursor: pointer;
+  border: 3px solid #e29158;
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+}
+/* line 152, ../sass/site-parts/_contact.scss */
+.contact-form input[type=button]:active {
+  transform: scale(0.9);
+}
+
+@media (min-width: 769px) {
+  /* line 166, ../sass/site-parts/_contact.scss */
+  .contact-info {
+    position: relative;
+    min-height: 380px;
+    padding: 8px 0 25px 0;
+    text-align: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 172, ../sass/site-parts/_contact.scss */
+  .contact-info:before {
+    position: absolute;
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 228%;
+    top: 0;
+    left: -886px;
+    background: #f2f2f2;
+  }
+
+  /* line 183, ../sass/site-parts/_contact.scss */
+  .contact-grid-right {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 187, ../sass/site-parts/_contact.scss */
+  input[type=text] {
+    float: left;
+    max-width: 45%;
+  }
+
+  /* line 191, ../sass/site-parts/_contact.scss */
+  input[type=email] {
+    max-width: 45%;
+  }
+
+  /* line 194, ../sass/site-parts/_contact.scss */
+  .contact-form {
+    position: relative;
+    min-height: 407px;
+    padding: 100px 20px 0 100px;
+  }
+  /* line 198, ../sass/site-parts/_contact.scss */
+  .contact-form:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 129%;
+    top: 0;
+    right: -1000px;
+    background: #e4e4e4;
+  }
+
+  /* line 209, ../sass/site-parts/_contact.scss */
+  input[type=button] {
+    float: right;
+  }
+}
 /* line 1, ../sass/layout/_footer.scss */
 footer {
-  position: relative;
-  overflow: hidden;
-  text-align: center;
   background-color: #222;
 }
-/* line 6, ../sass/layout/_footer.scss */
-footer .social-list {
-  margin: 60px auto 25px;
-  text-align: center;
+/* line 3, ../sass/layout/_footer.scss */
+footer .container {
+  padding: 100px 5px;
+}
+/* line 5, ../sass/layout/_footer.scss */
+footer .container .footer-logo-block {
+  max-width: 380px;
+  color: #fff;
+  margin: 0 auto 70px;
 }
 /* line 9, ../sass/layout/_footer.scss */
-footer .social-list li {
-  display: inline-block;
-  margin: 0 12px 12px 0;
+footer .container .footer-logo-block img {
+  max-width: 100%;
 }
-/* line 12, ../sass/layout/_footer.scss */
-footer .social-list li:last-child {
-  margin-right: 0;
+/* line 13, ../sass/layout/_footer.scss */
+footer .container p {
+  text-align: center;
+  display: block;
+  font: 16px/40px "AmbleRegular";
+  color: #e4e4e4;
 }
-/* line 15, ../sass/layout/_footer.scss */
-footer .social-list li .fa {
-  width: 48px;
-  height: 48px;
-  border: 2px solid white;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  padding: 10px;
-  font-size: 24px;
-  color: #fff;
-  transition: 0.5s;
+/* line 18, ../sass/layout/_footer.scss */
+footer .container p a {
+  color: #d87843;
+  font: 16px/40px "AmbleBold";
 }
-/* line 24, ../sass/layout/_footer.scss */
-footer .social-list li .fa:hover {
-  color: #222;
-  background-color: #fff;
-}
-/* line 31, ../sass/layout/_footer.scss */
-footer .copyright-text {
-  margin-bottom: 60px;
-  font-size: 16px;
-  color: #bbb;
-}
-/* line 35, ../sass/layout/_footer.scss */
-footer .copyright-text span {
-  color: #f7cc4b;
+/* line 21, ../sass/layout/_footer.scss */
+footer .container p a:hover {
+  text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65);
 }
 
 /* line 21, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
